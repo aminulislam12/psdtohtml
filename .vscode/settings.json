@@ -1,0 +1,18 @@
+{
+  // config related to code formatting
+  "editor.defaultFormatter": "",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": ""
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": ""
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": false,
+    "source.fixAll.tslint": false,
+    "source.organizeImports": false
+  }
+}
