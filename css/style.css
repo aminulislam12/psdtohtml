@@ -7,6 +7,37 @@
     font-size: 14px;
 }
 
+
+/*
+=============
+Button
+=============
+*/
+
+.myBtn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 16px 32px 16px 32px;
+    border-radius: 35px;
+    border: 1px solid #b5b5b5;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.myBtn:hover {
+    text-decoration: none;
+    color: #4caf50;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+
+/*
+=====================
+Top Bar Css
+=====================
+*/
+
 .top-bg {
     background-color: #343434;
 }
@@ -46,4 +77,109 @@
 .top-right li a:hover {
     color: #fff;
     transition: 0.3s;
+}
+
+
+/*
+=======================
+Main Menu CSS
+======================
+*/
+
+.myNav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+li.nav-item {
+    margin-right: 10px;
+    margin-left: 10px
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #444444 !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #8bc34a !important;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: #8bc34a !important;
+}
+
+.search>i {
+    color: #b5b5b5;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+
+/*
+==================
+Slider Area Style
+==================
+*/
+
+.slider {
+    position: relative;
+}
+
+.slider-Item img {
+    max-width: 100%;
+}
+
+.slider-Item::after {
+    position: absolute;
+    content: "";
+    background-color: black;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 57%;
+}
+
+.slider-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+}
+
+.pera-1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -3px;
+}
+
+.slider-text {
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+}
+
+.pera-2 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
+}
+
+.btn-one {
+    margin-right: 15px;
+}
+
+.btn-two {
+    margin-left: 15px;
 }
