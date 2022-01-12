@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     font-size: 14px;
@@ -98,7 +96,7 @@ li.nav-item {
 
 .navbar-light .navbar-nav .nav-link {
     color: #444444 !important;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
     font-size: 13px;
 }
@@ -168,6 +166,7 @@ Slider Area Style
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 17px;
+    letter-spacing: 2px;
 }
 
 .pera-2 {
@@ -182,4 +181,54 @@ Slider Area Style
 
 .btn-two {
     margin-left: 15px;
+}
+
+.left-arrow {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    z-index: 5;
+    color: #fff;
+    font-size: 40px;
+    transform: translateY(-50%);
+}
+
+.right-arrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    z-index: 5;
+    font-size: 40px;
+    color: #fff;
+    transform: translateY(-50%);
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+    color: #4caf50;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.indicators {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+}
+
+.indicators li {
+    width: 10px;
+    height: 10px;
+    z-index: 50;
+    background-color: rgb(231, 231, 231);
+    margin-right: 5px;
+    border: 1px solid rgb(231, 231, 231);
+}
+
+.indicators li.active {
+    border: 1px solid #474747;
 }
